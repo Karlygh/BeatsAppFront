@@ -1,0 +1,100 @@
+/* animations.css */
+
+/* Fades */
+.animate-fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+
+.animate-fade-in.animated {
+    opacity: 1;
+}
+
+.animate-fade-slide-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-fade-slide-down.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-scale-fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-scale-fade-in.animated {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Slides */
+.animate-slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-slide-in-left.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-slide-in-right.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-slide-up.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scale */
+.animate-scale-up {
+    transform: scale(0.8);
+    transition: transform 0.8s ease-out;
+    opacity: 0;
+}
+
+.animate-scale-up.animated {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Delays */
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
+.delay-4 {
+    transition-delay: 0.8s;
+}
+
+.delay-5 {
+    transition-delay: 1.0s;
+}
