@@ -41,6 +41,7 @@ body {
   z-index: 1000;
   transition: all 0.3s ease;
   font-family: 'Roboto';
+  z-index: 1000 ;
 }
 
 .navbar-brand img {
@@ -127,12 +128,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .hero-image img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
   object-fit: contain;
+  height: auto;
 }
 
 .btn {
@@ -158,6 +160,7 @@ body {
   color: var(--black);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ 
 }
 
 .scroll-down {
@@ -249,7 +252,8 @@ body {
   filter: brightness(1) !important;
   transform: scale(1.1) !important;
   z-index: 2;
-  transition: transform 0.3s ease, filter 0.2s ease, opacity: 0.2s ease;
+  transition: transform 0.3s ease, filter 0.2s ease;
+  opacity: 0.2s ease;
 }
 
 .number{
@@ -341,7 +345,8 @@ body {
   margin-bottom: 1rem;
   margin-left: auto;
   margin-right: auto;
-  transition: width 0.3s ease-in-out, height: 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  height: 0.3s ease-in-out;
 }
 
 .accessory-item:hover .accessory-image {
@@ -360,6 +365,7 @@ body {
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
+   border:1px solid white;
 }
 
 #botondescubre:hover {
@@ -410,4 +416,9 @@ body {
 
 .footer p {
   margin-bottom: 0.5rem;
+}
+@media (min-width: 1600px) {
+  .hero-image img {
+    max-width: 1000px;
+  }
 }

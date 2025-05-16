@@ -51,32 +51,42 @@
     </header>
 
     <!-- ======================== SECCIÓN HERO ======================== -->
-    <section id="hero" class="hero d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 hero-content">
-                    <h1 class="hero-title animate-fade-slide-down">Beats Studio Pro: <span>Puro sonido. Pura energía.</span></h1>
-                    <p class="hero-subtitle animate-fade-slide-down delay-1">Experimenta el audio como nunca antes</p>
-                    <a href="#features" class="btn animate-scale-fade-in delay-2" id="botondescubre">Descúbrelo</a>
-                </div>
-                <div class="col-md-6 hero-image animate-fade-in delay-3 d-none d-md-block">
-                    <img src="assets/images/headphones.png" alt="Beats Studio Pro" class="img-fluid">
-                </div>
-            </div>
-        </div>
-        <div class="scroll-down animate-bounce d-none d-lg-block">
-            <a href="#features">
-                <img src="assets/icons/arrow.png" alt="Scroll down" width="45">
-            </a>
-        </div>
-    </section>
+   <section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 hero-content">
+        <h1 class="hero-title animate-fade-slide-down">
+          Beats Studio Pro: <span>Puro sonido. Pura energía.</span>
+        </h1>
+        <p class="hero-subtitle animate-fade-slide-down delay-1">
+          Experimenta el audio como nunca antes
+        </p>
+        <!-- Botón centrado corregido -->
+        <a href="#features" class="btn animate-scale-fade-in delay-2 mx-auto d-block" id="botondescubre">
+          Descúbrelo
+        </a>
+      </div>
+
+      <!-- CAMBIO: ahora visible en todos los dispositivos -->
+      <div class="col-md-6 hero-image animate-fade-in delay-3 d-block">
+        <img src="assets/images/headphones.png" alt="Beats Studio Pro" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down animate-bounce d-none d-lg-block">
+    <a href="#features">
+      <img src="assets/icons/arrow.png" alt="Scroll down" width="45">
+    </a>
+  </div>
+</section>
 
     <!-- ======================== SECCIÓN CARACTERÍSTICAS ======================== -->
     <section id="features" class="section">
         <div class="container">
             <h2 class="section-title animate-slide-in-left">Características destacadas</h2>
             <ul class="features-list">
-                <li class="animate-slide-in-right delay-1">Cancelación activa de ruido <span class="number">100%</span></li>
+                <li class="animate-slide-in-right delay-1">Cancelación activa de ruido <span class="number">100</span></li>
                 <li class="animate-slide-in-right delay-2">Sonido espacial personalizado</li>
                 <li class="animate-slide-in-right delay-3">Batería de hasta <span class="number">40</span> horas</li>
             </ul>
